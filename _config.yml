@@ -101,15 +101,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "JI Kwon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "공부하려고 만든 블로그"
+  location         : "Daegu"
+  email            : "ing4114@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "ing4114@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"

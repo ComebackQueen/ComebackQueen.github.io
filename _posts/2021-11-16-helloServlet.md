@@ -57,15 +57,15 @@ SpringApplication.run(ServletApplication.class, args);
 
 ## 서블릿 컨테이너 동작 방식
 
-1. 내장 톰켓 서버 생성
+1.내장 톰켓 서버 생성
 
 ![](../assets/images/2021-11-16-helloServlet/1.JPG)
 
-2. HTTP 요청, 응답 메시지
+2.HTTP 요청, 응답 메시지
 
 ![](../assets/images/2021-11-16-helloServlet/2.JPG)
 
-3. 웹 애플리케이션 서버의 요청 응답 구조
+3.웹 애플리케이션 서버의 요청 응답 구조
 
 ![](../assets/images/2021-11-16-helloServlet/3.JPG)
 

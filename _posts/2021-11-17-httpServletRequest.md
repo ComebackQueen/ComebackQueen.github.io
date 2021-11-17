@@ -1,8 +1,6 @@
 ---
 layout: single
 title:  "서블릿"
-toc: true
-toc_sticky: true
 categories:
   - Spring_MVC_ver1
 ---
@@ -108,7 +106,7 @@ String[] usernames = request.getParameterValues("username"); //복수 파라미�
 
   
 
-  ![](/assets/images/2021-11-17-html (copy)/1.JPG)
+  ![](/assets/images/2021-11-17-httpRequestServlet/1.JPG)
 
 
 

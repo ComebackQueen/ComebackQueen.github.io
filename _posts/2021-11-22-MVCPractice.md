@@ -4,7 +4,7 @@ title:  "서블릿, JSP, MVC 패턴"
 toc: true
 toc_sticky: true
 categories:
-  - Spring_MVC_ver
+  - Spring_MVC_ver1
 ---
 
 # MVC 패턴 - 적용

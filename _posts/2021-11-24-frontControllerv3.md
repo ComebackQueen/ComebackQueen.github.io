@@ -101,7 +101,7 @@ public class MemberFormControllerV3 implements ControllerV3 {
 
 
 
-- **MemberSavaControllerV3 - 회원 저장**
+- **MemberSaveControllerV3 - 회원 저장**
 
 ```java
 public class MemberSaveControllerV3 implements ControllerV3 {

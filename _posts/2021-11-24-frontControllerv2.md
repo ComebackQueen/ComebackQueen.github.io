@@ -82,7 +82,7 @@ public class MemberFormControllerV2 implements ControllerV2 {
 
 
 
-- **MemberSavaControllerV2 - 회원 저장**
+- **MemberSaveControllerV2 - 회원 저장**
 
 ```java
 public class MemberSaveControllerV2 implements ControllerV2 {

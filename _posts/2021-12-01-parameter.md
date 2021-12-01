@@ -1,0 +1,76 @@
+---
+layout: single
+title:  "스프링 MVC - 구조 이해"
+toc: true
+toc_sticky: true
+categories:
+  - Spring_MVC_ver1
+---
+
+#  HTTP 요청 파라미터 - 쿼리 파라미터, HTML Form
+
+
+
+## HTTP 요청 데이터 조회 - 개요
+
+### 클라이언트에서 서버로 요청 데이터를 전달할 때는 주로 다음 3가지 방법을 사용
+
+- **GET - 쿼리 파라미터**
+  - /url?**username=hello&age=20**
+  - 메시지 바디 없이, URL의 쿼리 파라미터에 데이터를 포함해서 전달
+  - ex) 검색, 필터, 페이징등에서 많이 사용하는 방식
+- **POST - HTML Form**
+  - content-type: application/x-www-form-urlencoded
+  - 메시지 바디에 쿼리 파라미터 형식으로 전달 username=hello&age=20
+  - ex) 회원 가입, 상품 주문, HTML Form 사용
+- **HTTP message body**에 데이터를 직접 담아서 요청
+  - HTTP API에서 주로 사용, JSON, XML, TEXT
+  - 데이터 형식은 주로 JSON 사용
+  - POST, PUT, PATCH
+
+---
+
+
+
+## 요청 파라미터 - 쿼리 파라미터, HTML Form
+
+HTTPServletRequest의 request.getParameter()를 사용하면 다음 두가지 요청 파라미터를 조회할 수 있다
+
+
+
+- **GET, 쿼리 파라미터 전송**
+
+  - ex) http://localhost:8080/request-param?username=hello&age=20
+
+- **POST, HTML Form 전송**
+
+  - ```java
+    POST /request-param ...
+    content-type: application/x-www-form-urlencoded
+    username=hello&age=20
+    ```
+
+
+
+- **RequestParamController**
+
+```java
+@Slf4j
+@Controller
+public class RequestParamController {
+
+    @RequestMapping("/request-param-v1")
+    public void requestParamV1(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String username = request.getParameter("username");
+        //요청 파라미터 조회
+        
+        int age = Integer.parseInt(request.getParameter("age"));
+        log.info("username={}, age={}",username, age);
+
+        response.getWriter().write("ok");
+    }
+}
+```
+
+- **GET 실행**
+  - http://localhost:8080/request-param-v1?username=hello&age=20

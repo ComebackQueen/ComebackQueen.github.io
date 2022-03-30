@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "IT, 개발 공부"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "JI KWON"
+name                     : "Jaein Kwon"
 description              : "더 나은 내일을 위해..."
 url                      : "https://ComebackQueen.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"

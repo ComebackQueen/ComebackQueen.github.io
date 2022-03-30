@@ -4,7 +4,7 @@ title:  "빈 스코프"
 toc: true
 toc_sticky: true
 categories:
-  - Spring_Basic 
+  - Spring_Basic 스
 ---
 
 #  request 스코프 예제 개발
@@ -89,12 +89,9 @@ public class LogDemoController {
     @ResponseBody
     public String logDemo(HttpServletRequest request) throws InterruptedException {
         String requestURL = request.getRequestURL().toString();
-
-        System.out.println("myLogger = " + myLogger.getClass());
         myLogger.setRequestURL(requestURL);
 
         myLogger.log("controller test");
-        Thread.sleep(1000);
         logDemoService.logic("testID");
         return "OK";
     }

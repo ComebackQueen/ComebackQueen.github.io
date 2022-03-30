@@ -7,8 +7,6 @@ categories:
   - Spring_Basic
 ---
 
-#  request 스코프 예제 개발
-
 # 스코프와 Provider
 
 

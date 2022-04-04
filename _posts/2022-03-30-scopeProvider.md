@@ -4,7 +4,7 @@ title:  "빈 스코프"
 toc: true
 toc_sticky: true
 categories:
-  - Spring_Basic
+  - Spring_Basic 
 ---
 
 # 스코프와 Provider
